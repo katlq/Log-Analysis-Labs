@@ -1,0 +1,10 @@
+# NOTE: the source report only captured the top-5 404'd URLs, not a
+# full list of every URL requested. To generate a complete urls.txt,
+# run against the original log:
+#   awk '{print $7}' apache_access.log | sort -u > urls.txt
+# Listed below are the URLs known from this analysis (top 5 404s):
+/tienda1/publico/anadir.jsp
+/tienda1/miembros/editar.jsp
+/tienda1/publico/registro.jsp
+/tienda1/publico/pagar.jsp
+/tienda1/publico/autenticar.jsp

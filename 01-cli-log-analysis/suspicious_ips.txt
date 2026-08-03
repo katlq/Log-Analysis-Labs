@@ -1,0 +1,15 @@
+# Genuine high-priority suspicious IPs (public addresses, cross-referenced
+# against Top-10 talkers). Internal RFC1918 addresses from the raw SQLi
+# keyword grep were excluded as likely false positives - see Section 3
+# of Log-Analysis-Report.md for the reasoning and the corrected grep to
+# re-run for confirmation.
+80.94.95.116
+45.129.14.201
+198.51.100.77
+185.220.101.34
+203.0.113.46
+198.51.100.23
+91.243.85.12
+45.155.204.9
+185.220.101.7
+203.0.113.45
