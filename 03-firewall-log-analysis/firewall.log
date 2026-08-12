@@ -1,0 +1,6 @@
+Jan 15 08:15:23 fw01 filterlog: block,in,tcp,203.0.113.50,192.0.2.10,54321,22,S
+Jan 15 08:15:24 fw01 filterlog: block,in,tcp,203.0.113.50,192.0.2.10,54322,23,S
+Jan 15 08:15:25 fw01 filterlog: block,in,tcp,203.0.113.50,192.0.2.10,54323,21,S
+Jan 15 08:15:26 fw01 filterlog: block,in,tcp,203.0.113.50,192.0.2.10,54324,25,S
+Jan 15 08:15:27 fw01 filterlog: block,in,tcp,203.0.113.50,192.0.2.10,54325,80,S
+# ... (add more entries)
