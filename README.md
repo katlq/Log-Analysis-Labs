@@ -4,15 +4,18 @@ This repo hosts two separate SOC log-analysis labs — one on Linux, one on Wind
 
 ```
 .
-├── README.md                      → you are here (repo overview, no findings)
-├── 01-cli-log-analysis/           → Project 1: Log Analysis with CLI Tools
-│   ├── apache_access.log          →   raw Apache access log used for the analysis
-│   ├── Log-Analysis-Report.md     →   full write-up: methodology, commands, findings
-│   ├── unique_ips.txt             →   every unique IP extracted from the log
-│   ├── suspicious_ips.txt         →   IPs flagged as genuine follow-up/blocking candidates
-│   └── urls.txt                   →   URLs identified during the analysis
-└── 02-powershell-log-analysis/    → Project 2: Windows Log Analysis with PowerShell
-    └── ...                        →   scripts + report (in progress)
+├── README.md                              → you are here (repo overview, no findings)
+├── 01-cli-log-analysis/                   → Project 1: Log Analysis with CLI Tools
+│   ├── apache_access.log                  →   raw Apache access log used for the analysis
+│   ├── Log-Analysis-Report.md             →   full write-up: methodology, commands, findings
+│   ├── unique_ips.txt                     →   every unique IP extracted from the log
+│   ├── suspicious_ips.txt                 →   IPs flagged as genuine follow-up/blocking candidates
+│   └── urls.txt                           →   URLs identified during the analysis
+└── 02-powershell-log-analysis/            → Project 2: Windows Log Analysis with PowerShell
+│    └── ...                               →   scripts + report (in progress)
+└── 03-firewall-log-analysis/              → Project 3 — Firewall Log Analysis (OPNsense)
+    ├── screenshots/
+    └── Firewall_Log_Analysis_Report.md    → Firewall log analysis, attack detection, IP blocking, writing rules
 ```
 
 ---
@@ -54,4 +57,23 @@ Full results will live in [`02-powershell-log-analysis/`](./02-powershell-log-an
 
 ---
 
-*Both labs: Beginner → Intermediate. This README is a project index only — detailed methodology, commands, and findings are in each project's own report.*
+## 📁 Project 3 — Firewall Log Analysis (OPNsense)
+
+**Tools:** OPNsense, Splunk, `grep`/`awk`, command-line log analysis
+
+**Scenario:** Acting as a SOC analyst at **GlobalTech Corporation**, investigating unusual traffic patterns on the perimeter firewall protecting the company's public-facing web servers. Multiple blocked connection attempts were logged, raising concerns about a potential targeted attack, and the task was to analyze the firewall logs to determine the nature and scope of the activity, identify the attackers, and recommend security improvements.
+
+**What it practices:**
+- Parsing and analyzing firewall logs from multiple vendors (pfSense, Cisco ASA, Fortinet)
+- Identifying port scanning and reconnaissance activity from firewall logs
+- Detecting brute-force attacks and unauthorized access attempts
+- Correlating firewall logs with threat intelligence
+- Using command-line tools and SIEM (Splunk) for firewall log analysis
+- Creating firewall rules based on analysis findings
+- Generating professional firewall analysis reports
+
+Full results will live in [`03-firewall-log-analysis/`](./03-firewall-log-analysis/) once complete.
+
+---
+
+This README is a project index only — detailed methodology, commands, and findings are in each project's own report.*
